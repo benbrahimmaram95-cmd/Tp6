@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <form action="#" method="POST" id="contact-form">
+    <!-- Section 1 : Informations personnelles -->
+    <fieldset>
+        <legend>Informations personnelles</legend>
+        <div class="form-group"> 
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required minlength="2"maxlength="50" placeholder="ex:ben ali"><br>
+        </div>
+        <div class="form-group"> 
+            <label for="nom">Prénom</label>
+            <input type="text" id="Prénom" name="Prénom"required minlength="2"maxlength="50" placeholder="ex:Mohamed"></br>
+        </div>
+        <div class="form-group"> 
+            <label for="nom">Adresse E-mail</label>
+            <input type="text" id="Adresse E-mail" name="Adresse E-mail"required minlength="2"maxlength="50" placeholder="charilaissra@gmail.com"><br>
+        </div>
+        <div class="form-group"> 
+            <label for="nom">Téléphone</label>
+            <input type="text" id="Téléphone" name="Téléphone"required minlength="2"maxlength="50" placeholder="ex:51827867"><br>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Votre Message</legend>
+        <div class="form-group"> 
+            
+            <label for="sujet de la demande">Sujet de la demande</label>
+            <input type="text" id="sujet de la demande" name="sujet de la demande"required minlength="2"maxlength="50" placeholder="sélectionnez un sujet"><br>
+        </div>
+        <div class="form-group"> 
+            <label for="ville">Ville</label>
+            <input list="villes-list"  id="ville" name="ville" required minlength="2"maxlength="50" placeholder="Entrez ou choissez Votre ville"><br>
+        </div>
+        <div class="form-group"> 
+            <datalist id="villes-list">
+                <option value="Tozeur">
+                <option value="Sousse">
+                <option value="Tunis">
+                <option value="Sfax">
+                <option value="Gafsa">
+                </div>           
+            </datalist>
+            <label for="message">Message</label>
+
+            <input type="text" id="message" name="message"required minlength="2"maxlength="50" placeholder="Rédigez votre message"><br>
+        </div>
+    </fieldset>
+    <button type="submit">Envoiyer le message</button>
+    <button type="reset">Effacer</button>
+</form>
+</body>
+</html>
